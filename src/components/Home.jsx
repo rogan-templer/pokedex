@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 import { getPokemonList } from '../api'
-
 
 function Home() {
   const [pokemonList, setPokemonList] = useState([])
@@ -20,8 +20,10 @@ function Home() {
   {
       pokemonList.map((pokemon, index) => {
         return (
-          <li key={index}>{pokemon.name}</li>  
-          )
+          <li key={index}>
+            <Link to={`/Details/${pokemon.name}`}>{pokemon.name}</Link>
+          </li>  
+        )
       })
     }
     </ul>
@@ -30,3 +32,4 @@ function Home() {
 }
 
 export default Home;
+
