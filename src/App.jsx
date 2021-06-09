@@ -9,7 +9,7 @@ function App() {
  return (
    <>
    <Route exact path='/' component={Home} />
-   <Route path='/Details' component={Details} />
+   <Route path='/Details/:name/:number' component={Details} />
    </>
  )
 }
