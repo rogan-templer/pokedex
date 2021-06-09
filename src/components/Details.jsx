@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from "react-router-dom";
+import BackToHome from './BackToHome';
 
 function Details () {
   
@@ -32,6 +33,8 @@ function Details () {
         })
       }
       </p>
+      <hr/>
+      <BackToHome />
       </>
     )
   

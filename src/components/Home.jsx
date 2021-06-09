@@ -14,6 +14,10 @@ function Home() {
   }, [])
  
   return (
+    <>
+    <div>
+      <h1>Pokedex</h1>
+    </div>
     <ul>
   {
       pokemonList.map((pokemon, index) => {
@@ -32,7 +36,7 @@ function Home() {
       })
     }
     </ul>
-  
+  </>
   )
 }
 
