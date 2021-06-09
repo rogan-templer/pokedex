@@ -9,9 +9,7 @@ function Home() {
   useEffect(() => {
     getPokemonList()
     .then(list => {
-      setPokemonList(list)
-      
-      
+      setPokemonList(list)      
     })
   }, [])
  
