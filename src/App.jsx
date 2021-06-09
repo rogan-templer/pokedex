@@ -1,13 +1,15 @@
+import React from 'react'
+import { Route } from 'react-router-dom'
+
+import Home from './components/Home'
 
 
 function App() {
-  return (
-    <div>
-      <header>
-        <h1>Hello World</h1>
-      </header>
-    </div>
-  );
+ return (
+   <>
+   <Route path='/' component={Home} />
+   </>
+ )
 }
 
 export default App;
