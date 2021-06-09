@@ -3,8 +3,10 @@ This is a project to set up a webpage that will show list of 150 different Pokem
 
 ## To get started
 
-```npm install```
-```npm start```
+```
+npm install
+npm start
+```
 
 The server will be running on http://localhost:3000
 
