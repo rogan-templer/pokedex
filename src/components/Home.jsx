@@ -34,7 +34,7 @@ function Home() {
                     to={{
                       pathname: `/Details/${name}/${index + 1}/`
                     }}
-                  className="link">
+                  >
                     {name}
                   </Link>
                 </li>  
