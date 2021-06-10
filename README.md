@@ -24,4 +24,4 @@ These are things I would like to have been able to do with more time:
 - 3. General styling improvements to enhance the look of the page.
 
 ## Author
-Rogan Templer - [LinkedIn Profile](https://www.linkedin.com/in/rogan-templer-327158167/)
+Rogan Templer - [LinkedIn](https://www.linkedin.com/in/rogan-templer-327158167/)
