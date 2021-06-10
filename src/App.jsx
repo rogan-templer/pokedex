@@ -8,8 +8,10 @@ import Details from './components/Details'
 function App() {
  return (
    <>
-   <Route exact path='/' component={Home} />
-   <Route path='/Details/:name/:number' component={Details} />
+   <div className="container">
+      <Route exact path='/' component={Home} />
+      <Route path='/Details/:name/:number' component={Details} />
+   </div>
    </>
  )
 }

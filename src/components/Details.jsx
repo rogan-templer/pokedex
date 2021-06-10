@@ -21,8 +21,9 @@ function Details () {
 
     return (
       <>
-      <h1>{name}</h1>
-      <p>Types: {
+      <div className="grid">
+      <h1 className="col">{name}</h1>
+      <p className="col">Types: {
         info.map((data, index) => {
           
           
@@ -33,8 +34,9 @@ function Details () {
         })
       }
       </p>
-      <hr/>
+      <hr className="col"/>
       <BackToHome />
+      </div>
       </>
     )
   

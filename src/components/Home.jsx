@@ -15,27 +15,29 @@ function Home() {
  
   return (
     <>
-    <div>
-      <h1>Pokedex</h1>
-    </div>
-    <ul>
-  {
-      pokemonList.map((pokemon, index) => {
-        const name = pokemon.name;
-        return (
-          <li key={index}>
-            <Link 
-              to={{
-                pathname: `/Details/${name}/${index + 1}/`
-              }}
-            >
-              {name}
-            </Link>
-          </li>  
-        )
-      })
-    }
-    </ul>
+    <div className="grid">
+      <div className="col">
+        <h1>Pokedex</h1>
+      </div>
+          <ul>
+        {
+            pokemonList.map((pokemon, index) => {
+              const name = pokemon.name;
+              return (
+                <li key={index}>
+                  <Link 
+                    to={{
+                      pathname: `/Details/${name}/${index + 1}/`
+                    }}
+                    className="col m-6">
+                    {name}
+                  </Link>
+                </li>  
+              )
+            })
+          }
+          </ul>
+    </div> 
   </>
   )
 }
