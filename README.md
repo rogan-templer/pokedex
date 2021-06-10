@@ -9,7 +9,7 @@ npm install
 npm start
 ```
 
-You will then be able to find ehe server running on http://localhost:3000
+You will then be able to find the server running on http://localhost:3000
 
 ## User Stories
 - [x] I want to be able to see a list of Pokemon.
