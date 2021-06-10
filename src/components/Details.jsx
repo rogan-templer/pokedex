@@ -22,7 +22,7 @@ function Details () {
     return (
       <>
       <div className="grid">
-      <h1 className="col">{name}</h1>
+        <h1 className="col">{name}</h1>
       <p className="col">Types: {
         info.map((data, index) => {
           return (
@@ -33,7 +33,7 @@ function Details () {
       }
       </p>
       <hr className="col"/>
-      <BackToHome />
+        <BackToHome />
       </div>
       </>
     )
