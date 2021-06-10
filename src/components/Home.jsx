@@ -19,7 +19,10 @@ function Home() {
     <>
     <div className="grid">
       <div className="col">
-        <h1>Pokedex</h1>
+        <img src="/images/Pokemon.png" alt="pokemon banner"/>
+      </div>
+      <div className="col">
+        <h1>Welcome to the Pokedex!</h1>
       </div>
           <ul className="col ">
         {
