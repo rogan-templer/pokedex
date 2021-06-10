@@ -2,8 +2,7 @@
 This is a project to set up a webpage that will show list of 150 different Pokemon.  A user will then be able to navigate to individual pokemon pages by clicking on their name and on the new page obtain further information about that pokemon.
 
 ## To get started
-
-Run the following scripts in your terminal:
+Clone this repository to your machine then run the following scripts in your terminal:
 
 ```
 npm install
