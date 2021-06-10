@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom'
 
 import { getPokemonList } from '../api'
 
+
+
 function Home() {
   const [pokemonList, setPokemonList] = useState([]);
 
@@ -19,7 +21,7 @@ function Home() {
       <div className="col">
         <h1>Pokedex</h1>
       </div>
-          <ul>
+          <ul className="col ">
         {
             pokemonList.map((pokemon, index) => {
               const name = pokemon.name;
@@ -29,7 +31,7 @@ function Home() {
                     to={{
                       pathname: `/Details/${name}/${index + 1}/`
                     }}
-                    className="col m-6">
+                  className="link">
                     {name}
                   </Link>
                 </li>  
