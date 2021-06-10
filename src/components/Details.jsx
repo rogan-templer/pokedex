@@ -25,8 +25,6 @@ function Details () {
       <h1 className="col">{name}</h1>
       <p className="col">Types: {
         info.map((data, index) => {
-          
-          
           return (
             <span key={index}>{data.type.name}, </span>
             
