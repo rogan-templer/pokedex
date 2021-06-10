@@ -3,10 +3,20 @@ This is a project to set up a webpage that will show list of 150 different Pokem
 
 ## To get started
 
+Run the following scripts in your terminal:
+
 ```
 npm install
 npm start
 ```
 
-The server will be running on http://localhost:3000
+You will then be able to find ehe server running on http://localhost:3000
 
+## User Questions
+[ ] I want to be able to see a list of Pokemon.
+[ ] I want to be able to click on a Pokemon and be directed to a page that shows more details about that Pokemon.
+[ ] I want to be able to navigate back to the main list easily.
+
+## Things that were considered but not implemented
+These are things I would like to have been able to do with more time:
+1. 
