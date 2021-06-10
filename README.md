@@ -13,9 +13,9 @@ npm start
 You will then be able to find ehe server running on http://localhost:3000
 
 ## User Questions
-[ ] I want to be able to see a list of Pokemon.
-[ ] I want to be able to click on a Pokemon and be directed to a page that shows more details about that Pokemon.
-[ ] I want to be able to navigate back to the main list easily.
+- [x] I want to be able to see a list of Pokemon.
+- [x] I want to be able to click on a Pokemon and be directed to a page that shows more details about that Pokemon.
+- [x] I want to be able to navigate back to the main list easily.
 
 ## Things that were considered but not implemented
 These are things I would like to have been able to do with more time:
