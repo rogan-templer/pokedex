@@ -18,7 +18,7 @@ You will then be able to find the server running on http://localhost:3000
 
 ## Things that were considered but not implemented
 These are things I would like to have been able to do with more time:
-- 1. Have the landing page display a bit more information about the Pokemon, especially a picture of each one.
+- 1. Have the landing page display a bit more information about the Pokemon, including a picture of each one.
 - 2. Tidy up how the types are displaying by removing the last comma.
 - 3. General styling improvements to enhance the look of the page.
 
