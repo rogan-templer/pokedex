@@ -19,13 +19,13 @@ function Home() {
   return (
     <>
     <div className="grid">
-      <div className="col">
+      <div className="col home">
         <img src="/images/Pokemon.png" alt="pokemon banner"/>
       </div>
-      <div className="col">
+      <div className="col home">
         <h1>Welcome to the Pokedex!</h1>
       </div>
-          <ul className="col ">
+          <ul className="col home">
         {
             pokemonList.map((pokemon, index) => {
               const name = pokemon.name;

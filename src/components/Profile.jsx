@@ -23,10 +23,8 @@ function Profile () {
 
     return (
       <>
-        <div>
-          <span> 
-            <img src={profile} alt='pokemon profile'/>
-          </span>
+        <div className="col profile">
+            <img src={profile} alt='pokemon profile'/>         
         </div>
       </>
     )
