@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { useParams } from "react-router-dom";
+import Profile from './Profile'
 import BackToHome from './BackToHome';
 
 function Details () {
@@ -19,10 +20,13 @@ function Details () {
     setInfo(data.types);  
   }
 
+ 
+
     return (
       <>
       <div className="grid">
         <h1 className="col">{name}</h1>
+        <Profile/>   
       <p className="col">Types: {
         info.map((data, index) => {
           return (

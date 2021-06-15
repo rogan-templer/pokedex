@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import { getPokemonList } from '../api'
+import Profile from './Profile'
 
 
 

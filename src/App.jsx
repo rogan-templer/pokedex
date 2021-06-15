@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom'
 
 import Home from './components/Home'
 import Details from './components/Details'
+import Profile from './components/Profile'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
    <div className="container">
       <Route exact path='/' component={Home} />
       <Route path='/Details/:name/:number' component={Details} />
+      
    </div>
    </>
  )
