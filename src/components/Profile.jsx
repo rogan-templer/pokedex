@@ -24,7 +24,7 @@ function Profile () {
     return (
       <>
         <div>
-          <span>Profile: 
+          <span> 
             <img src={profile} alt='pokemon profile'/>
           </span>
         </div>
