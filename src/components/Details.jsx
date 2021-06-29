@@ -1,49 +1,34 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import Profile from './Profile'
-import BackToHome from './BackToHome';
+import Profile from "./Profile";
+import BackToHome from "./BackToHome";
+import { getDetails } from "../api";
 
-function Details () {
-  
-  const [info, setInfo] = useState([]);
+function Details() {
+  const [types, setTypes] = useState([]);
   const { number, name } = useParams();
-  
+
   useEffect(() => {
-    
-    loadData();
-  }, [])
-  
-  
-  const loadData = async () => {
-    const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${number}/`);
-    const data = await response.json();
-    setInfo(data.types);  
-  }
+    getDetails(number).then((types) => {
+      setTypes(types);
+    });
+  }, [number]);
 
- 
-
-    return (
-      <>
+  return (
+    <>
       <div className="grid">
         <h1 className="col">{name}</h1>
-        <Profile/>   
-      <p className="col">Types: {
-        info.map((data, index) => {
-          return (
-            <span key={index}>{data.type.name}, </span>
-            
-          )
-        })
-      }
-      </p>
-      <hr className="col"/>
+        <Profile />
+        <p className="col">
+          Types:{" "}
+          {types.map((data, index) => {
+            return <span key={index}>{data.type.name}, </span>;
+          })}
+        </p>
+        <hr className="col" />
         <BackToHome />
       </div>
-      </>
-    )
-  
-
+    </>
+  );
 }
 export default Details;
-
-
