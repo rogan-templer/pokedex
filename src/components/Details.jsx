@@ -1,8 +1,11 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
+import { getDetails } from "../api";
+
 import Profile from "./Profile";
 import BackToHome from "./BackToHome";
-import { getDetails } from "../api";
+
+
 
 function Details() {
   const [types, setTypes] = useState([]);

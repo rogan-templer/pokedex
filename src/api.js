@@ -9,11 +9,20 @@ export function getPokemonList() {
     });
 }
 
-export function getDetails (number) {
+export function getDetails(number) {
   return request
-  .get(`https://pokeapi.co/api/v2/pokemon/${number}/`)
+    .get(`https://pokeapi.co/api/v2/pokemon/${number}/`)
+    .set("Accept", "application/json")
+    .then((response) => {
+      return response.body.types;
+    });
+}
+
+export function getProfile (number) {
+  return request
+  .get(`https://pokeapi.co/api/v2/pokemon-form/${number}/`)
   .set("Accept", "application/json")
   .then((response) => {
-    return response.body.types
-  })
+    return response.body.sprites.front_default;
+  });
 }
